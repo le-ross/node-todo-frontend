@@ -1,0 +1,8 @@
+{
+  "reporterEnabled": "mocha-junit-reporter, mochawesome",
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "jenkins-test-results.xml",
+    "useFullSuiteTitle": false,
+    "testCaseSwitchClassnameAndName": true
+  }
+}

@@ -1,8 +1,17 @@
 {
-  "reporterEnabled": "mocha-junit-reporter, mochawesome",
+  "reporterEnabled": "mocha-junit-reporter, mochawesome, mocha-xunit-reporter",
   "mochaJunitReporterReporterOptions": {
-    "mochaFile": "jenkins-test-results.xml",
-    "useFullSuiteTitle": true,
-    "testCaseSwitchClassnameAndName": false
+    "mochaFile": "junit-test-results.xml",
+    "useFullSuiteTitle": false,
+    "testCaseSwitchClassnameAndName": true
+  },
+  "xunitReporterOptions": {
+    "output": "reports/xunit-test-results.xml"
+  },
+  "mochawesomeReporterOptions": {
+    "reportFilename":"mocha-test-results",
+    "reportDir":"reports",
+    "inlineAssets": true,
+    "overwrite": true
   }
 }

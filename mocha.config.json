@@ -1,9 +1,10 @@
 {
-  "reporterEnabled": "mocha-junit-reporter, mochawesome, mocha-xunit-reporter",
+  "reporterEnabled": "mocha-junit-reporter, mochawesome, xunit",
   "mochaJunitReporterReporterOptions": {
-    "mochaFile": "junit-test-results.xml",
+    "mochaFile": "reports/junit-test-results.xml",
     "useFullSuiteTitle": false,
-    "testCaseSwitchClassnameAndName": true
+    "testCaseSwitchClassnameAndName": true,
+    "includePending": true
   },
   "xunitReporterOptions": {
     "output": "reports/xunit-test-results.xml"

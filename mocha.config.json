@@ -1,8 +1,7 @@
 {
   "reporterEnabled": "mocha-jenkins-reporter, mocha-junit-reporter, mochawesome",
   "mochaJenkinsReporterReporterOptions": {
-    "junit_report_path": "reports/jenkins-test-results.xml",
-    "junit_report_stack": 1
+    "junit_report_path": "reports/jenkins-test-results.xml"
   },
   "mochaJunitReporterReporterOptions": {
     "mochaFile": "reports/junit-test-results.xml",

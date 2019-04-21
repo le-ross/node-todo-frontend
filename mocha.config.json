@@ -1,11 +1,13 @@
 {
-  "reporterEnabled": "mocha-jenkins-reporter, mocha-junit-reporter, mochawesome",
+  "reporterEnabled": "mocha-junit-reporter, mochawesome, mocha-jenkins-reporter",
   "mochaJenkinsReporterReporterOptions": {
-    "junit_report_path": "reports/jenkins-test-results.xml"
+    "junit_report_path": "reports/jenkins-test-results.xml",
+    "junit_report_toConsole": false
   },
   "mochaJunitReporterReporterOptions": {
     "mochaFile": "reports/junit-test-results.xml",
-    "jenkinsMode": true
+    "jenkinsMode": true,
+    "includePending": true
   },
   "mochawesomeReporterOptions": {
     "reportFilename":"mocha-test-results",

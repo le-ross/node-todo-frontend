@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
-    "test": "mocha -R spec src/**/*.spec.js",
+    "test": "mocha src/**/*.spec.js",
     "test-n-report": "npm test -- --reporter mocha-multi-reporters --reporter-options configFile=mocha.config.json"
   },
   "keywords": [
@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "mocha": "*",
+    "mocha-multi-reporters": "*",
     "mocha-jenkins-reporter": "*",
     "mocha-junit-reporter": "*",
-    "mocha-multi-reporters": "*",
     "mocha-xunit-reporter": "*",
     "mochawesome": "*",
     "nock": "^10.0.4",
